@@ -1,0 +1,13 @@
+@startuml
+:Kurt PO: as PO
+(Use the application) as (Use)
+(Get list of all loaners) as (List)
+
+note right of (Use)
+As PO I would like to be able to lookup loaner
+based on CPRNr
+end note
+
+(PO) .. (Use)
+(PO) .. (List)
+@enduml
