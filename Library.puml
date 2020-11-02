@@ -1,6 +1,20 @@
 @startuml
 class Loaner {
-
+-name
+-year
+-gender
+-cprNr
+~getName()
 }
+
+class CPRNr {
+-name
+-year
+-gender
+-cprAsString
+~getCprAsString()
+}
+
+Loaner *-- CPRNr
 
 @enduml

@@ -1,0 +1,13 @@
+@startuml
+:Kurt PO: as PO
+(Use the application) as (Use)
+
+note right of (PO)
+As PO I would like to lookup a loaner based on
+CPRNumber because this is how we identify this enitity
+end note
+
+note "This note is connected\nto several objects." as N2
+(PO) .. N2
+N2 .. (Use)
+@enduml
