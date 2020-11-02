@@ -1,5 +1,7 @@
 package dk.car.cphwulf;
 
+import java.time.LocalDateTime;
+
 public class CPRNr {
     String navn;
     int year;
@@ -14,7 +16,12 @@ public class CPRNr {
     }
 
     public String getCprNrStr() {
+        LocalDateTime ldt = LocalDateTime.now();
+        LocalDateTime newLdt = ldt.minusYears(ldt.getYear()-year);
+        newLdt.g
         return cprNrStr;
+
+
     }
 
     public void initCPRnr() {
